@@ -20,8 +20,7 @@ import {
   Volume2,
   BrainCircuit,
   Smile,
-  CheckCircle,
-  RefreshCw
+  CheckCircle
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { saveOnboarding, getOnboarding, updateUserProfile } from "@/lib/firestore";
@@ -522,7 +521,7 @@ export default function OnboardingPage() {
           <div className="absolute inset-0 bg-gradient-to-tr from-white/95 via-indigo-50/80 to-white/95 dark:from-zinc-950/95 dark:via-indigo-950/80 dark:to-zinc-950/95 backdrop-blur-xs" />
         </div>
         <Card className="w-full max-w-2xl bg-white/70 dark:bg-zinc-900/70 border-zinc-200/80 dark:border-zinc-800/80 backdrop-blur-md shadow-lg rounded-2xl p-8 flex flex-col items-center justify-center min-h-[420px]">
-          <RefreshCw className="h-8 w-8 text-indigo-600 dark:text-indigo-400 animate-spin mb-4" />
+          <img src="/branding/icon.png" alt="CampusCopilot Loading" className="h-8 w-8 animate-spin mb-4 object-contain" />
           <p className="text-sm font-semibold text-zinc-600 dark:text-zinc-400 font-outfit">Loading your profile progress...</p>
         </Card>
       </div>
@@ -544,11 +543,8 @@ export default function OnboardingPage() {
 
         {/* Progress Header Grid */}
         <div className="w-full flex items-center justify-between px-2 text-zinc-500 dark:text-zinc-400">
-          <div className="flex items-center gap-2">
-            <GraduationCap className="h-6 w-6 text-indigo-600 dark:text-indigo-400" />
-            <span className="font-extrabold text-md text-zinc-900 dark:text-zinc-50 tracking-tight">
-              CampusCopilot
-            </span>
+          <div className="flex items-center">
+            <img src="/branding/logo-dark.png" alt="CampusCopilot Logo" className="h-8 w-auto object-contain" />
           </div>
           <span className="text-xs font-semibold bg-indigo-50 dark:bg-indigo-950/50 text-indigo-700 dark:text-indigo-300 px-3 py-1.5 rounded-full border border-indigo-100/50 dark:border-indigo-900/30">
             {getRemainingTime()}

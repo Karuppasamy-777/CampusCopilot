@@ -7,7 +7,7 @@ import { useAuth } from "@/hooks/use-auth";
 import { toast } from "@/hooks/use-toast";
 import Button from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
-import { GraduationCap, Mail, ArrowLeft, RefreshCw } from "lucide-react";
+import { Mail, ArrowLeft, RefreshCw } from "lucide-react";
 import Link from "next/link";
 
 export default function VerifyEmailPage() {
@@ -63,13 +63,8 @@ export default function VerifyEmailPage() {
 
       <div className="relative z-10 w-full max-w-md flex flex-col items-center">
         {/* Brand Logo */}
-        <div className="flex items-center gap-2.5 mb-6">
-          <div className="h-9 w-9 rounded-xl bg-indigo-600 dark:bg-indigo-500 flex items-center justify-center text-white shadow-xs">
-            <GraduationCap className="h-5 w-5" />
-          </div>
-          <span className="font-extrabold text-xl text-zinc-900 dark:text-zinc-50 tracking-tight">
-            CampusCopilot
-          </span>
+        <div className="flex flex-col items-center justify-center mb-6">
+          <img src="/branding/logo-dark.png" alt="CampusCopilot Logo" className="h-12 w-auto object-contain" />
         </div>
 
         {/* Verification Alert Card */}

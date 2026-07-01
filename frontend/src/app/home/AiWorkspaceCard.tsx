@@ -2,7 +2,6 @@
 
 import React, { useState, useRef } from "react";
 import { 
-  Bot, 
   Send, 
   Copy, 
   RotateCcw, 
@@ -48,9 +47,9 @@ export default function AiWorkspaceCard() {
     <Card className="bg-white dark:bg-zinc-900 border-zinc-200/60 dark:border-zinc-800/60 shadow-xs rounded-2xl overflow-hidden h-[620px] flex flex-col justify-between">
       
       {/* Header */}
-      <div className="p-4 border-b border-zinc-100 dark:border-zinc-800/50 bg-indigo-50/20 dark:bg-zinc-950/20 flex items-center justify-between shadow-xxs shrink-0">
+      <div className="p-4 border-b border-zinc-100 dark:border-zinc-805/50 bg-indigo-50/20 dark:bg-zinc-950/20 flex items-center justify-between shadow-xxs shrink-0">
         <div className="flex items-center gap-2 text-left">
-          <Bot className="h-4.5 w-4.5 text-primary shrink-0 animate-pulse" />
+          <img src="/branding/icon.png" alt="CampusCopilot Icon" className="h-4.5 w-4.5 object-contain shrink-0 animate-pulse" />
           <div>
             <h3 className="text-xs font-bold text-zinc-800 dark:text-zinc-100 font-outfit">CampusCopilot Workspace</h3>
             <span className="text-[9px] text-zinc-400 dark:text-zinc-500 block font-medium">Assistant shared instance</span>
@@ -64,8 +63,8 @@ export default function AiWorkspaceCard() {
         {hasNoConversation ? (
           /* Centered Empty State */
           <div className="flex flex-col items-center justify-center py-6 text-center space-y-5 max-w-xs mx-auto h-full">
-            <div className="h-14 w-14 rounded-2xl bg-indigo-50 dark:bg-indigo-950/40 text-primary dark:text-indigo-400 flex items-center justify-center shadow-xxs animate-fadeIn">
-              <Bot className="h-7 w-7 animate-bounce" />
+            <div className="h-14 w-14 rounded-2xl bg-indigo-50 dark:bg-indigo-950/40 flex items-center justify-center shadow-xxs animate-fadeIn">
+              <img src="/branding/icon.png" alt="CampusCopilot Icon" className="h-7 w-7 object-contain animate-bounce" />
             </div>
             <div className="space-y-1 text-center">
               <h2 className="text-sm font-black font-outfit text-zinc-900 dark:text-zinc-50">🤖 CampusCopilot</h2>
@@ -106,7 +105,7 @@ export default function AiWorkspaceCard() {
                     ? "bg-indigo-600 text-white" 
                     : "bg-zinc-100 dark:bg-zinc-800 text-primary border border-zinc-200/50 dark:border-zinc-805"
                 }`}>
-                  {msg.sender === "user" ? "U" : <Bot className="h-4 w-4" />}
+                  {msg.sender === "user" ? "U" : <img src="/branding/icon.png" alt="Bot Avatar" className="h-4 w-4 object-contain" />}
                 </div>
 
                 {/* Bubble */}
@@ -221,7 +220,7 @@ export default function AiWorkspaceCard() {
         {aiLoading && (
           <div className="flex gap-2 max-w-[90%] text-left mr-auto pt-2">
             <div className="h-7 w-7 rounded-full shrink-0 flex items-center justify-center text-[10px] font-bold shadow-xxs bg-zinc-100 dark:bg-zinc-800 text-primary border border-zinc-200/50 dark:border-zinc-805">
-              <Bot className="h-4 w-4 animate-pulse" />
+              <img src="/branding/icon.png" alt="Bot Loading Avatar" className="h-4 w-4 object-contain animate-pulse" />
             </div>
             <div className="space-y-1">
               <div className="p-3 rounded-2xl text-[11px] font-semibold leading-normal border bg-zinc-50 dark:bg-zinc-950/40 border-zinc-200/50 dark:border-zinc-800/60 text-zinc-500 dark:text-zinc-400 flex items-center gap-1.5">

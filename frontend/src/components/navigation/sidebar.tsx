@@ -11,7 +11,6 @@ import {
   Users, 
   Bot, 
   Settings, 
-  GraduationCap, 
   X, 
   ChevronLeft, 
   ChevronRight, 
@@ -98,14 +97,11 @@ export function Sidebar({ isOpen, onClose, isCollapsed, onToggleCollapse }: Side
       >
         {/* Logo and Brand */}
         <div className="flex h-16 items-center justify-between px-4 border-b border-zinc-100 dark:border-zinc-900">
-          <div className="flex items-center gap-2.5 overflow-hidden">
-            <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center text-white shrink-0 shadow-xs">
-              <GraduationCap className="h-5 w-5" />
-            </div>
-            {!isCollapsed && (
-              <span className="font-extrabold text-md text-zinc-900 dark:text-zinc-50 tracking-tight leading-none whitespace-nowrap font-outfit">
-                CampusCopilot
-              </span>
+          <div className="flex items-center overflow-hidden">
+            {isCollapsed ? (
+              <img src="/branding/icon.png" alt="CampusCopilot Icon" className="h-8 w-8 object-contain" />
+            ) : (
+              <img src="/branding/logo-dark.png" alt="CampusCopilot Logo" className="h-8 w-auto max-w-[180px] object-contain" />
             )}
           </div>
           <button

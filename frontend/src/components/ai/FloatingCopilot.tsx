@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import { 
-  Bot, 
   Send, 
   Copy, 
   RotateCcw, 
@@ -98,7 +97,7 @@ export default function FloatingCopilot() {
             {/* Header */}
             <div className="p-4 border-b border-zinc-100 dark:border-zinc-800/50 bg-indigo-50/20 dark:bg-zinc-950/20 flex items-center justify-between shadow-xxs">
               <div className="flex items-center gap-2">
-                <Bot className="h-5 w-5 text-primary shrink-0 animate-pulse" />
+                <img src="/branding/icon.png" alt="CampusCopilot Icon" className="h-5 w-5 object-contain shrink-0 animate-pulse" />
                 <div className="text-left">
                   <h3 className="text-xs font-bold text-zinc-800 dark:text-zinc-100 font-outfit">CampusCopilot AI</h3>
                   <span className="text-[9px] text-zinc-45 block font-medium">Assistant agent online</span>
@@ -313,7 +312,7 @@ export default function FloatingCopilot() {
         {isOpen ? (
           <X className="h-6 w-6" />
         ) : (
-          <Bot className="h-6 w-6 animate-pulse" />
+          <img src="/branding/icon.png" alt="AI Icon" className="h-6 w-6 object-contain animate-pulse" />
         )}
       </motion.button>
     </div>

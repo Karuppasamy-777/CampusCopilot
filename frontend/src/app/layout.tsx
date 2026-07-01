@@ -21,7 +21,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "CampusCopilot",
-  description: "Next-generation project foundation workspace",
+  description: "AI Operating System for Smart Campuses",
+  icons: {
+    icon: "/branding/favicon.ico",
+  },
 };
 
 export default function RootLayout({
