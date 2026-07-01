@@ -1,0 +1,107 @@
+@import "tailwindcss";
+@source "C:/Users/acer/Downloads/CampusCopilot/frontend/src/**/*.{ts,tsx,js,jsx}";
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --font-sans: var(--font-outfit), var(--font-geist-sans), sans-serif;
+  --font-body: var(--font-inter), var(--font-geist-sans), sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+
+  --radius-lg: 20px;
+  --radius-md: 12px;
+  --radius-sm: 8px;
+}
+
+:root {
+  --background: #F8FAFC;
+  --foreground: #0F172A;
+
+  --card: #FFFFFF;
+  --card-foreground: #0F172A;
+
+  --primary: #6D5EF9;
+  --primary-foreground: #FFFFFF;
+
+  --secondary: #4F8CFF;
+  --secondary-foreground: #FFFFFF;
+
+  --muted: #F1F5F9;
+  --muted-foreground: #64748B;
+
+  --accent: #F1F5F9;
+  --accent-foreground: #0F172A;
+
+  --destructive: #EF4444;
+  --destructive-foreground: #FFFFFF;
+
+  --border: #E2E8F0;
+  --input: #E2E8F0;
+  --ring: #6D5EF9;
+}
+
+.dark {
+  --background: #090D16;
+  --foreground: #F8FAFC;
+
+  --card: #111827;
+  --card-foreground: #F8FAFC;
+
+  --primary: #6D5EF9;
+  --primary-foreground: #FFFFFF;
+
+  --secondary: #4F8CFF;
+  --secondary-foreground: #FFFFFF;
+
+  --muted: #1F2937;
+  --muted-foreground: #9CA3AF;
+
+  --accent: #1F2937;
+  --accent-foreground: #F8FAFC;
+
+  --destructive: #EF4444;
+  --destructive-foreground: #FFFFFF;
+
+  --border: #1F2937;
+  --input: #1F2937;
+  --ring: #6D5EF9;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+}
+
+@keyframes slow-pan {
+  0% { transform: scale(1.03) translate(0px, 0px); }
+  50% { transform: scale(1.08) translate(-8px, -4px); }
+  100% { transform: scale(1.03) translate(0px, 0px); }
+}
+
+.animate-slow-pan {
+  animation: slow-pan 25s ease-in-out infinite;
+}
