@@ -192,9 +192,9 @@ sequenceDiagram
 | --- | --- |
 | ![Dashboard Placeholder](screenshots/dashboard.png) | ![Timetable Placeholder](screenshots/timetable.png) |
 
-| Assignments | AI Workspace | Settings |
+| Assignments | AI Workspace | login |
 | --- | --- | --- |
-| ![Assignments Placeholder](screenshots/assignments.png) | ![AI Workspace Placeholder](screenshots/ai_workspace.png) | ![Settings Placeholder](screenshots/settings.png) |
+| ![Assignments](screenshots/assignments.png) | ![AI Workspace](screenshots/ai_workspace.png) | ![login](screenshots/login.png) |
 
 ---
 
